@@ -31,6 +31,7 @@ function populateFormData() {
     if (savedData) {
         for (const key in savedData) { 
             refs[key].value = savedData[key];
+            formData[key] = savedData[key];          //------виправлення зроблене------//
         }
     };
 }
